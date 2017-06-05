@@ -24,7 +24,7 @@ module.exports.handlers = {
 module.exports.starthandler = Alexa.CreateStateHandler(states.START, {
 
 	START(){
-		this.emitWithState(':tell', MSG_START);
+		this.emit(':tell', MSG_START);
 	},
 		Unhandled(){
 		this.handler.state = states.ERROR;
