@@ -21,7 +21,7 @@ module.exports.handlers = {
 	}
 }
 
-module.exports.starthandler = Alexa.CreateStateHandler(States.START, {
+module.exports.starthandler = Alexa.CreateStateHandler(states.START, {
 
 	START(){
 		this.emitWithState(':tell', MSG_START);
