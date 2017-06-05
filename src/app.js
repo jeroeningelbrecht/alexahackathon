@@ -1,7 +1,7 @@
 const Alexa = require('alexa-sdk');
 
 const MSG_ERROR = 'Oops, something went wrong.  You know what, let\'s call it a day.';
-const MSG_START = 'Ok, let\'s start!';
+const MSG_START = 'Ok, let\'s start you tiger!!!  Go go hackathon!!';
 
 const states = {
 	ERROR : '_ERROR',
