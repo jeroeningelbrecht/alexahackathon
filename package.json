@@ -4,6 +4,7 @@
   "description": "used for alexa hackathon at kbc on 20170609",
   "main": "src/server",
   "scripts": {
+    "start": "node src/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
