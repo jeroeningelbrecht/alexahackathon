@@ -101,7 +101,7 @@ module.exports.starthandler = Alexa.CreateStateHandler(states.START, {
 	},
 
 	'AMAZON.YesIntent' : function(){
-		this.emit(':ask', MSG_YES;
+		this.emit(':ask', MSG_YES);
 	},
 
 	'DaysLeaveLeftIntent' : function(){
