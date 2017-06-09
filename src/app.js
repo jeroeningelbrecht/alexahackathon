@@ -21,6 +21,8 @@ const MSG_TRAIN_BUS_ANSWER = 'Perhaps you can take a bus at half past four.  By 
 
 // Holiday
 
+const MSG_WEATHER = 'Tomorrow it will be sunny in Brussels';
+
 const MSG_HOLIDAY = 'Should I do the necessary for you';
 
 const MSG_YES = 'Your request is sent to your manager.  Can I do anything else for you?';
@@ -91,10 +93,7 @@ module.exports.starthandler = Alexa.CreateStateHandler(states.START, {
 	},
 
 	'AMAZON.SearchAction<object@WeatherForecast>' : function(){
-		//this.emit('AMAZON.SearchAction<object@WeatherForecast>');
-		//, () => {
-			this.emit(':ask', 'That was the weather reception.  Do you want more?');	
-		//});
+		this.emit(':ask', MSG_WEATHER);
 	}, 
 
 	'HolidayIntent' : function(){
