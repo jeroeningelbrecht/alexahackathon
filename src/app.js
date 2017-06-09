@@ -49,6 +49,14 @@ module.exports.starthandler = Alexa.CreateStateHandler(states.START, {
 		this.emit(':ask', MSG_ROOM_ANSWER);
 	},
 
+	'LocationIntent' : function(){
+		this.emit(':ask', MSG_LOCATION_ANSWER);
+	},
+
+	'ThankYouIntent' : function(){
+		this.emit(':tell', MSG_THANK_YOU_ANSWER);
+	},
+
 	Unhandled(){
 		this.handler.state = states.ERROR;
 		this.emitWithState('Unhandled');
