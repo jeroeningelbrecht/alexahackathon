@@ -91,9 +91,10 @@ module.exports.starthandler = Alexa.CreateStateHandler(states.START, {
 	},
 
 	'AMAZON.SearchAction<object@WeatherForecast>' : function(){
-		this.emit('AMAZON.SearchAction<object@WeatherForecast>', () => {
-			this.emit(':ask', 'That was the weather reception.  Do you want more?');	
-		});
+		this.emit('AMAZON.SearchAction<object@WeatherForecast>');
+		//, () => {
+		//	this.emit(':ask', 'That was the weather reception.  Do you want more?');	
+		//});
 	}, 
 
 	'HolidayIntent' : function(){
